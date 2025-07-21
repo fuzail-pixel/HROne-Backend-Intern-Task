@@ -1,0 +1,22 @@
+# Environment variables
+.env
+
+# Python specific files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE specific files (e.g., VS Code)
+.vscode/
+
+# Editor swap files
+*~
+.DS_Store # macOS specific
+
+# Pytest cache directory
+.pytest_cache/
