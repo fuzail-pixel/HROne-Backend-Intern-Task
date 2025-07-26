@@ -12,11 +12,18 @@ db = None
 
 async def connect_db():
     global client, db
-    client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_URI)
-    db = client[DB_NAME]
-    print(" Connected to MongoDB")
+    try:
+        client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_URI)
+        db = client[DB_NAME]
+        print("Connected to MongoDB")
+    except Exception as e:
+        print(f" MongoDB connection error: {e}")
 
 async def close_db():
     global client
-    client.close()
-    print(" Disconnected from MongoDB")
+    if client:
+        client.close()
+        print(" Disconnected from MongoDB")
+
+def get_db():
+    return db
