@@ -3,6 +3,16 @@
 ## Overview
 This is a FastAPI-based ecommerce backend application built for the HROne internship task. The application provides REST APIs for managing products and orders, similar to platforms like Flipkart/Amazon.
 
+## 📘 API Documentation
+You can access the interactive Swagger documentation here:  
+➡️ **[Live API Documentation](https://hrone-backend-intern-task.onrender.com/docs)**
+
+The Swagger UI provides:
+- Interactive API testing interface
+- Complete endpoint documentation
+- Request/response schema details
+- Authentication information
+
 ## Features
 - ✅ Create and list products with filtering capabilities
 - ✅ Create orders and retrieve user order history
@@ -72,6 +82,18 @@ This is a FastAPI-based ecommerce backend application built for the HROne intern
   - `limit`: Number of documents to return
   - `offset`: Number of documents to skip for pagination
 - **Response**: `200 OK`
+
+## Quick Start
+
+### 🚀 Try the API
+1. Visit the [Interactive API Documentation](https://hrone-backend-intern-task.onrender.com/docs)
+2. Test endpoints directly in the browser
+3. View real-time request/response examples
+
+### 📋 Base URL
+```
+https://hrone-backend-intern-task.onrender.com
+```
 
 ## Project Structure
 ```
@@ -168,6 +190,8 @@ The application is designed to be tested by automated scripts that will:
 1. Test all API endpoints with specified request/response formats
 2. Verify HTTP status codes
 3. Validate data structure and MongoDB operations
+
+You can also test the API manually using the [interactive documentation](https://hrone-backend-intern-task.onrender.com/docs).
 
 ## Error Handling
 - Comprehensive error responses with appropriate HTTP status codes
